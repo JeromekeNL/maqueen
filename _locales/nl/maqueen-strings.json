@@ -3,10 +3,10 @@
     "maqueen.aMotors.M2|block": "Rechts",
     "maqueen.Patrol.PatrolLeft|block": "sensorLinks",
     "maqueen.Patrol.PatrolRight|block": "sensorRechts",
-    "maqueen.LEDswitch.turnOn|block": "LED Aan",
-    "maqueen.LEDswitch.turnOff|block": "LED Uit",
-    "maqueen.LED.LEDLeft|block": "LED links",
-    "maqueen.LED.LEDRight|block": "LED rechts",
+    "maqueen.LEDswitch.turnOn|block": "Aan",
+    "maqueen.LEDswitch.turnOff|block": "Uit",
+    "maqueen.LED.LEDLeft|block": "Links",
+    "maqueen.LED.LEDRight|block": "Rechts",
     "maqueen.Dir.CW|block": "Vooruit",
     "maqueen.Dir.CCW|block": "Achteruit",
     "maqueen.motorStop|block": "Stop motor|%motors",
@@ -15,6 +15,6 @@
     "maqueen.IR_callbackUser|block": "met IR ontvangen",
     "maqueen.sensor|block": "Sensor eenheid|%unit",
     "maqueen.readPatrol|block": "Lees route geleiding|%patrol",
-    "maqueen.writeLED|block": "LED|%led|LED schakelaar|%ledswitch",
+    "maqueen.writeLED|block": "LED|%led|schakelaar LED|%ledswitch",
     "maqueen.IR_read|block": "Lees infrarood"
 }

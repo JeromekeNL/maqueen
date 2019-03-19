@@ -56,10 +56,7 @@ namespace maqueen{
         //% blockId="turnOff" block="turnOff"
         turnOff=0x00
     }
-	enum ArgNamesIR {
-		myparam,
-		message
-	}
+
 
     //% advanced=true shim=maqueenIR::initIR
     function initIR(pin: Pins):void{
@@ -88,7 +85,7 @@ namespace maqueen{
     //% mutateText=Packeta
     //% mutateDefaults="myparam;myparam:message"
     //% blockId=IR_callbackUser block="on IR received"
-    export function IR_callbackUser(args: ArgNamesIR[],maqueencb: (packet: Packeta) => void) {
+    export function IR_callbackUser(maqueencb: (packet: Packeta) => void) {
         maqueenInit()
         IR_callback(() => {
             const packet = new Packeta();

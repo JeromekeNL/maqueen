@@ -18,7 +18,7 @@ MicroSeconds
 namespace maqueen{
   
     export class Packeta {
-        public myparam: number;
+        public message: number;
 		public mye: string;
     }
     
@@ -83,7 +83,7 @@ namespace maqueen{
     //% blockGap=50
     //% mutate=objectdestructuring
     //% mutateText=Packeta
-    //% mutateDefaults="myparam;myparam:message"
+    //% mutateDefaults="message"
     //% blockId=IR_callbackUser block="on IR received"
     export function IR_callbackUser(maqueencb: (packet: Packeta) => void) {
         maqueenInit()
@@ -91,7 +91,7 @@ namespace maqueen{
             const packet = new Packeta();
             packet.mye = maqueene;
             maqueenparam=getParam();
-            packet.myparam = maqueenparam;
+            packet.message = maqueenparam;
             maqueencb(packet)
         });
     }

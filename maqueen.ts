@@ -82,8 +82,8 @@ namespace maqueen{
     //% blockGap=50
     //% mutate=objectdestructuring
     //% mutateText=Packeta
-    //% mutateDefaults="myparam;myparam:message"
-    //% blockId=IR_callbackUser block="on obloq received"
+    //% mutateDefaults="myparam;myparam,message"
+    //% blockId=IR_callbackUser block="on IR received"
     export function IR_callbackUser(maqueencb: (packet: Packeta) => void) {
         maqueenInit()
         IR_callback(() => {
